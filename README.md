@@ -1,2 +1,2 @@
 # CS499-ePortfolio
-SNHU CS-499
+Brett Nottmeier CS-499
