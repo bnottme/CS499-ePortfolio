@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ePortfolio • Brett Nottmeier</title>
+  <meta name="description" content="Professional ePortfolio for Brett Nottmeier" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav" id="topNav">
+      <div class="brand">
+        <a href="#top" class="brand-link">Brett Nottmeier<span class="dot">.</span></a>
+        <span class="badge">CS499 ePortfolio</span>
+      </div>
+
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav"
+        onclick="document.getElementById('topNav').classList.toggle('open'); this.setAttribute('aria-expanded', document.getElementById('topNav').classList.contains('open'));">
+        ☰ Menu
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact & Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Brett Nottmeier ePortfolio</h1>
+        <p class="lead">Portfolio showcasing projects made for CS-499 Capstone.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Summary (STACKED) -->
+    <section id="about" class="section">
+      <div class="container two-col no-split">
+        <article class="panel">
+          <h2>About Me</h2>
+          <p><em>Hi, I’m Brett. I’m studying Computer Science and I work at Amazon in ICQA where accuracy and process matter a lot. I like building useful apps—Android for mobile, Python/Dash for data, and Java for desktop—and I focus on security, testing, and simple UI that makes sense. This portfolio highlights three artifacts I improved this year: an event tracker app, a MongoDB dashboard, and a Java slideshow.</em></p>
+        </article>
+
+        <article id="summary" class="panel">
+          <h2>Professional Summary</h2>
+
+          <p>I’m Brett Nottmeier, a Computer Science student at SNHU and an ICQA Process Assistant at Amazon. Completing this program and creating my ePortfolio helped me clarify how I want to work as a developer: design with the user in mind, write secure and modular code, test early, and communicate decisions clearly and concisely. The capstone experience strengthened these habits and showed how my strengths translate into employable skills.</p>
+
+          <p><strong>Collaboration &amp; Communication.</strong> I worked in online teams, incorporated instructor feedback, and documented design choices so others can follow my reasoning. At Amazon, I provide clear, short updates—and I bring that style to software with readable commits and plain-language explanations for non-technical stakeholders.</p>
+
+          <p><strong>Data Structures &amp; Algorithms.</strong> I choose practical tools—lists, maps, sets—and use simple loops or queues to keep logic predictable. I optimize only where it matters. The slideshow’s controls, Android RecyclerView rendering, and dashboard filtering are small but solid examples of the right structure at the right time.</p>
+
+          <p><strong>Software Engineering &amp; Databases.</strong> I start with requirements, sketch flowcharts, and write pseudocode, then build in small, testable steps. I’ve shipped two database-backed projects: a Python/Dash dashboard using MongoDB (CRUD, filters, map/charts) and an Android app using SQLite (schema design, queries, RecyclerView). In both, I focused on clean data models, input validation, friendly error messages, and performance (using the right indexes/queries) while keeping the UI simple and documented.</p>
+
+          <p><strong>Security Mindset.</strong> I validate inputs, handle errors safely, limit access by default (least privilege), hash sensitive data, and sanitize user input to avoid exposing confidential information.</p>
+
+          <p><strong>How the artifacts fit together.</strong></p>
+          <ul class="bullets">
+            <li><strong>Artifact #1 — Java Swing SlideShow:</strong> Event-driven programming, UI state management, keyboard shortcuts, and image scaling with careful handling of timers and user input.</li>
+            <li><strong>Artifact #2 — Android Event Tracker:</strong> Mobile patterns (activities, RecyclerView, SQLite), plus improved security (salted password hashing, validation), an edit/update flow, and stronger error handling.</li>
+            <li><strong>Artifact #3 — MongoDB AAC Dashboard:</strong> Full-stack data work with a Python/Dash front end and MongoDB backend, including CRUD, dynamic filters, a map, and charts for stakeholders.</li>
+          </ul>
+
+          <p>Together, these artifacts represent core outcomes of the CS-499 Capstone—software design, algorithms/data structures, databases, security, and professional communication. They reflect my values: build useful tools, keep them reliable and simple, and explain them clearly. I’m ready to bring this mindset to a software role where I can keep learning, contribute to a team, and ship applications that help people.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Featured Artifacts</h2>
+
+
+        <div class="grid">
+          <!-- Project 1: Java SlideShow -->
+          <article class="card" aria-labelledby="p1-title">
+            <div class="content">
+              <h3 id="p1-title">Artifact #1 — Java SlideShow</h3>
+              <p class="sub">Autoplay • Keyboard shortcuts • Image scaling</p>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Swing</span>
+              </div>
+              <p>Java Swing slideshow app with autoplay, pause, and keyboard navigation. I improved image scaling, UI state management, and event/timer handling for a smoother, more responsive experience.</p>
+            </div>
+            <div class="actions">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">View Code</a>
+              <a class="btn tiny primary" href="https://youtu.be/Z4pgfBZOxqE" target="_blank" rel="noreferrer">Code Review</a>
+            </div>
+          </article>
+
+          <!-- Project 2: Android Event Tracker -->
+          <article class="card" aria-labelledby="p2-title">
+            <div class="content">
+              <h3 id="p2-title">Artifact #2 — Android Event Tracker</h3>
+              <p class="sub">SQLite • RecyclerView • Login/Registration • Secure storage</p>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Android</span>
+                <span class="tag">SQLite</span>
+              </div>
+              <p>Android app to create and manage events with secure sign-in. I added salted password hashing, input validation, an edit/update flow, and stronger error handling while refining the RecyclerView UI.</p>
+            </div>
+            <div class="actions">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">View Code</a>
+              <a class="btn tiny primary" href="https://youtu.be/eeJDB1mgZVI" target="_blank" rel="noreferrer">Code Review</a>
+            </div>
+          </article>
+
+          <!-- Project 3: MongoDB AAC Dashboard -->
+          <article class="card" aria-labelledby="p3-title">
+            <div class="content">
+              <h3 id="p3-title">Artifact #3 — MongoDB AAC Dashboard</h3>
+              <p class="sub">CRUD module • Map + Charts • Dynamic filters</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Dash</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <p>Python/Dash dashboard backed by MongoDB for exploring AAC data. Includes CRUD, interactive filters, a map, and charts; I improved schema/queries and made the UI more responsive for stakeholders.</p>
+            </div>
+            <div class="actions">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">View Code</a>
+              <a class="btn tiny primary" href="https://youtu.be/KmQ_vuARn-k" target="_blank" rel="noreferrer">Code Review</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Resume -->
+    <section id="contact" class="section alt">
+      <div class="container two-col">
+        <div class="panel">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:bkn966@gmail.com">bkn966@gmail.com</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/brett-nottmeier-0b1311218/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li>🐙 <a href="https://github.com/bnottme" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Download Resume</h2>
+          <a class="btn" href="./resume.pdf" target="_blank" rel="noreferrer">Open Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="y"></span> Brett Nottmeier</small>
+    </div>
+  </footer>
+</body>
+</html>
