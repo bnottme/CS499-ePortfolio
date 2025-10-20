@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project One Brett N</string>
+    <string name="login_button">Login</string>
+    <string name="add_button"> </string>
+    <string name="sms_agreement">Do you agree to communicate with SMS messaging?</string>
+    <string name="sms_button_yes">Yes</string>
+    <string name="sms_button_no">No</string>
+</resources>
